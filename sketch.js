@@ -53,11 +53,11 @@ function setup() {
 
 function draw() {
   background(255);
-
+//Posi
   // kangaroo.x=camera.positionX-270;
   //kangaroo.x=Camera.positionX-270;
   // kangaroo.x=camera.position.x-270;
-   kangaroo.x=Camera.PositionX-270;
+   kangaroo.x=camera.position.x-270;
    
   if (gameState===PLAY){
 
@@ -113,8 +113,7 @@ function spawnShrubs() {
   if (frameCount % 150 === 0) {
    
     // var shrub = createSprite(camera.position.x+500,330,40,10);
-  
-     var shrub = createSprite(Camera.position.x+500,330,40,10);
+     var shrub = createSprite(camera.position.x+500,330,40,10);
 
     shrub.velocityX = -(6 + 3*score/100)
     shrub.scale = 0.6;
@@ -144,7 +143,7 @@ function spawnObstacles() {
   if(frameCount % 120 === 0) {
 
     // var obstacle = createSprite(camera.Position.X+400,330,40,40);
-     var obstacle = createSprite(Camera.Position.x+400,330,40,40);
+     var obstacle = createSprite(camera.position.x+400,330,40,40);
     // var obstacle = createSprite(camera.position.x+400,330,40,40);
     // var obstacle = createSprite(camera.position.x.400,330,40,40);
 
@@ -158,3 +157,4 @@ function spawnObstacles() {
     
   }
 }
+//colli
